@@ -1,0 +1,54 @@
+{
+  "name": "react-hanger",
+  "version": "0.0.1",
+  "description": "",
+  "sideEffects": false,
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "esmodule": "dist/index.modern.js",
+  "umd:main": "dist/index.umd.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "lint": "eslint ./src --max-warnings 0 --cache",
+    "lint:fix": "npm run lint -- --fix",
+    "tsc": "tsc",
+    "test": "jest",
+    "test:watch": "npm test -- --watchAll",
+    "build": "microbundle --no-compress"
+  },
+  "author": "Kris Renaldi",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.38",
+    "@typescript-eslint/eslint-plugin": "3.1.0",
+    "@typescript-eslint/parser": "3.1.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-flowtype": "4.7.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.3",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-react-hooks": "2.5.1",
+    "jest": "^27.4.5",
+    "microbundle": "^0.14.2",
+    "prettier": "2.0.5",
+    "react": "^16.14.0",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "react-dom": "^17.0.2"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "react-hanger",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "",
   "sideEffects": false,
   "source": "src/index.ts",
@@ -16,6 +16,7 @@
     "test": "jest",
     "test:watch": "npm test -- --watchAll",
     "build": "microbundle --no-compress",
+    "clean": "rimraf types cjs esm",
     "preversion": "npm run clean && npm run build && npm run test",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
@@ -46,6 +47,7 @@
     "eslint-plugin-react-hooks": "2.5.1",
     "jest": "^27.4.5",
     "microbundle": "^0.14.2",
+    "rimraf": "^3.0.2",
     "prettier": "2.0.5",
     "react": "^16.14.0",
     "react-test-renderer": "^17.0.2",

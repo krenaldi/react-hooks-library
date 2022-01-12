@@ -1,9 +1,6 @@
 {
   "extends": ["react-app", "prettier"],
   "plugins": ["prettier", "jest"],
-  "env": {
-    "jest/globals": true
-  },
   "rules": {
     "prettier/prettier": "warn"
   }
